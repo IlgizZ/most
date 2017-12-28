@@ -25,7 +25,9 @@ class QRReader extends Component {
 
      registerUser(user, this.props.id)
        .then(response => {
-         var logStatus = response.data.was
+         console.log(response);
+         var { logStatus } = response.data
+         console.log(logStatus);
          if (!logStatus)
            throw new Error('Ошибка ответа сервера!')
 
