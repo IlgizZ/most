@@ -15,3 +15,9 @@ export const login = (eventId) => {
   //   })
   // });
 }
+export const registerUser = (user, id) => {
+  return axios.post('https://us-central1-meteor-764bf.cloudfunctions.net/registerUser', {
+    user,
+    id
+  })
+}
