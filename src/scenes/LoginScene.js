@@ -1,15 +1,13 @@
 import React from 'react'
-import  { View, Text } from 'react-native'
+import   LoginForm  from '../components/LoginForm'
+
 class LoginScene extends React.Component {
 
   render() {
     console.log(123);
+
     return(
-      <View>
-        <Text>
-          HEYqwe
-        </Text>
-      </View>
+      <LoginForm />
     )
   }
 }
