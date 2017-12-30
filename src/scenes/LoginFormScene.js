@@ -10,11 +10,13 @@ export default class LoginFormScene extends Component {
           placeholderTextColor="#FFF"
           underlineColorAndroid='#FFF'
           style = {styles.input} />
+        <View style={styles.shadow}>
         <TouchableOpacity style={[styles.buttonContainer, styles.shadow]}>
           <Text style={styles.buttonText}>
             Администрировать
           </Text>
         </TouchableOpacity>
+      </View>
       </View>
     );
   }
